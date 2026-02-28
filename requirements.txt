@@ -1,0 +1,7 @@
+pyyaml
+requests
+rasterio
+geopandas
+shapely
+fiona
+numpy

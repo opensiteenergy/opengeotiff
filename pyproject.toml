@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "OpenGeoTIFF"
+version = "0.1.0"
+description = "A standalone library for GeoTIFF data processing"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  { name="Stefan Haselwimmer", email="haselwimmer@gmail.com" }
+]
+dependencies = [
+  "pyyaml",
+  "requests",
+  "rasterio",
+  "geopandas",
+  "shapely",
+  "fiona",
+  "numpy"
+]
+
+[project.scripts]
+opengeotiff = "opengeotiff.core:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
