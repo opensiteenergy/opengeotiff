@@ -13,7 +13,7 @@ A `yml` configuration file is used to provide key parameters to the library.
 ## Installation
 
 ```
-pip install git+https://github.com/SH801/opengeotiff.git
+pip install git+https://github.com/opensiteenergy/opengeotiff.git
 ```
 
 To use the library, enter:
@@ -35,7 +35,7 @@ The `.yml` configuration file should have the following format:
 # Link to this GitHub code repository 
 # This can be used to host yml files on an open data server and automatically install required library just-in-time
 codebase:
-  https://github.com/SH801/opengeotiff.git
+  https://github.com/opensiteenergy/opengeotiff.git
 
 # Link to Solargis 1km resolution solar irradiation GeoTIFF
 # https://solargis.com/resources/free-maps-and-gis-data?locality=united-kingdom
@@ -49,7 +49,7 @@ cache_dir:
 
 # External URL or path to a geometry file used to crop the output to a specific shape
 clipping:
-  https://github.com/open-wind/openwindenergy/raw/refs/heads/main/overall-clipping.gpkg
+  https://github.com/opensiteenergy/opensiteenergy/raw/refs/heads/main/clipping-master-EPSG-25830.gpkg
 
 # The exact name and extension of the final file generated
 output:
